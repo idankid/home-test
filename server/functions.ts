@@ -22,7 +22,7 @@ module.exports={
         // building the message
         const message = {
             to: body["emailArray"],
-            from: "idanbkideckel@gmail.com",
+            from: process.env.USER_EMAIL,
             subject: body["subject"],
             text: body["body"]
         }
@@ -44,7 +44,7 @@ module.exports={
         const request = {
             url: `/v3/messages`,
             method: 'GET',
-            qs: {"query": "from_email=\"idanbkideckel@gmail.com\""},
+            qs: {"query": "from_email=\"" + process.env.USER_EMAIL+ "\""},
 
         }
 
