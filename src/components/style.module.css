@@ -1,0 +1,69 @@
+
+.sub{
+    display: block;
+    width: 30%;
+    height: 10%;
+    border-radius:4px;
+    margin: auto;
+}
+
+.body{
+    display: block;
+    width: 30%;
+    height: 350px;
+    border-radius:4px;
+    margin: auto;
+    margin-top:4px;
+    resize: none;
+}
+
+.list{
+    display: block;
+    width: 30%;
+    height:10%;
+    border-radius:4px;
+    margin:auto;
+    margin-top:4px;
+    resize: none;
+
+}
+
+.close{
+    position: absolute;
+    left: 30px;
+    top: 30 px;
+    font-size: 2em;
+    width: 50px;
+}
+.header{
+    display: block;
+    margin-left: 42%;
+}
+
+.submit{
+    font-size: 1.4em;
+    height: 1.4em;
+    width: 2.8em;
+    margin-left: 47%;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+td{
+    background-color: red;
+    border: 2px black solid;
+}
+
+table{
+    width: 500px;
+    margin: auto;
+}
+
+button{
+    width:150px;
+    height: 50px;
+    background-color: black;
+    color: white
+
+}
+
