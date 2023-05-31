@@ -34,15 +34,19 @@ const Dashboard = ()=> {
  
   useEffect(()=>{
     getStatistics();
-  },[])
+  })
 
   // getting the statistics
-  const getStatistics = async()=>{
+  const getStatistics = ()=>{
     // getting the data with the statistics and parsing it
-    let respone =  await fetch("http://localhost:3000/statistics",{method:"GET"})
-    let data = await respone.json();
+    fetch("http://localhost:3000/statistics",{method:"GET"}).then(async response=>{
 
-    mapResponseToStatistics(data["messages"]);
+      let data = await response.json();
+      mapResponseToStatistics(data["messages"]);
+
+    }).catch(err=>{
+      console.log(err);
+    })
 
   }
 
